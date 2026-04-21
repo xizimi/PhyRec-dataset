@@ -1,17 +1,44 @@
-# Mixed Motion rPPG Video Dataset
+# PhyRec Dataset
 
-This dataset contains videos captured under mixed motion scenarios, including stationary, walking, and running activities, designed for research on remote photoplethysmography (rPPG). The videos are suitable for evaluating rPPG signal extraction methods, heart rate estimation, and activity classification in varying motion contexts.
+**PhyRec Dataset** is a multimodal dataset specifically designed for contact and remote photoplethysmography (PPG) research. It provides synchronized recordings to facilitate the study of physiological signal extraction and the comparison between pulse wave dynamics and respiratory signals.
 
 ## Dataset Overview
 
-- **Content**: Each video includes a combination of different motions:
-  - Stationary
-  - Walking
-  - Running
-- **Video Format**: AVI
-- **Resolution**: 1280x720
-- **Frame Rate**: 30 FPS
-- **Annotation**: The dataset includes synchronized rPPG signals, derived from videos with corresponding ground truth heart rate data.
+The dataset consists of recordings from **17 subjects** (10 male and 7 female, average age: 23 years). Data was collected under two distinct respiratory conditions:
+- **Spontaneous Breathing:** Natural, unguided breathing.
+- **Controlled Breathing:** Breathing paced by a metronome.
+
+### Acquisition Specifications
+
+| Modality | Device / Source | Resolution / Rate | Format |
+| :--- | :--- | :--- | :--- |
+| **Video** | Intel RealSense D455 | 640 × 480 @ 30 fps | `.avi` |
+| **PPG Signal** | Custom/Commercial Device | 50 Hz | `.npy` |
+| **Respiration** | Respiratory Belt | 50 Hz | `.npy` |
+| **Lighting** | Auxiliary Light Source | 820 lux (Stable) | - |
+
+> **Note:** All modalities are precisely temporally synchronized.
+
+---
+
+## File Structure & Content
+
+The dataset is organized by Subject ID and Session ID. Each session folder contains synchronized video and signal files.
+
+**Directory Hierarchy:**
+```text
+/PhyRec/
+├── 202412/ (Date)
+│   ├── 1734441203/ (Session ID)
+│   │   ├── front_Video-0.avi       # Facial video (Front view)
+│   │   ├── right_Video-0.avi       # Facial video (Right view)
+│   │   ├── up_Video-0.avi          # Facial video (Top view)
+│   │   ├── hands_Color.avi         # Hand video (if applicable)
+│   │   ├── Serial-COM4_sig.npy     # Contact PPG signal
+│   │   ├── Respi-COM5_sig.npy      # Respiratory belt signal
+│   │   ├── Serial-COM4_ts.npy      # Timestamps for PPG
+│   │   └── ...
+
 
 ## Usage Policy
 
