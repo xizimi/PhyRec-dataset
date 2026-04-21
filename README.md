@@ -42,7 +42,7 @@ The dataset is organized by Subject ID and Session ID. Each session folder conta
 
 ## Usage Policy
 
-This dataset is intended for research purposes only, specifically for the evaluation of rPPG algorithms in mixed motion contexts. Users are required to submit a request form to access the dataset, providing a brief description of their intended research.
+This dataset is intended for research purposes only. Users are required to submit a request form to access the dataset, providing a brief description of their intended research.
 
 ### How to Access
 
