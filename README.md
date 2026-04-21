@@ -12,7 +12,7 @@ The dataset consists of recordings from **17 subjects** (10 male and 7 female, a
 
 | Modality | Resolution / Rate | Format |
 | :--- |  :--- | :--- |
-| **Video** |  640 × 480 @ 30 fps | `.avi` |
+| **Video** |   30 fps | `.avi` |
 | **PPG Signal** |  50 Hz | `.npy` |
 | **Respiration** |  50 Hz | `.npy` |
 | **Lighting** |  820 lux (Stable) | - |
@@ -30,10 +30,10 @@ The dataset is organized by Subject ID and Session ID. Each session folder conta
 /PhyRec/
 ├── 202412/ (Date)
 │   ├── 1734441203/ (Session ID)
-│   │   ├── front_Video-0.avi       # Facial video (Front view)
-│   │   ├── right_Video-0.avi       # Facial video (Right view)
-│   │   ├── up_Video-0.avi          # Facial video (Top view)
-│   │   ├── hands_Color.avi         # Hand video (Hand view)
+│   │   ├── front_Video-0.avi       # Facial video (Front view, 1920×1080)
+│   │   ├── right_Video-0.avi       # Facial video (Right view, 1280×700)
+│   │   ├── up_Video-0.avi          # Facial video (Top view, 1280×800)
+│   │   ├── hands_Color.avi         # Hand video (Hand view, 1280×1024)
 │   │   ├── Serial-COM4_sig.npy     # Contact PPG signal
 │   │   ├── Respi-COM5_sig.npy      # Respiratory belt signal
 │   │   ├── Serial-COM4_ts.npy      # Timestamps for PPG
