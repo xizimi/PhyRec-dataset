@@ -10,12 +10,12 @@ The dataset consists of recordings from **17 subjects** (10 male and 7 female, a
 
 ### Acquisition Specifications
 
-| Modality | Device / Source | Resolution / Rate | Format |
+| Modality | Resolution / Rate | Format |
 | :--- | :--- | :--- | :--- |
-| **Video** | Intel RealSense D455 | 640 × 480 @ 30 fps | `.avi` |
-| **PPG Signal** | Custom/Commercial Device | 50 Hz | `.npy` |
-| **Respiration** | Respiratory Belt | 50 Hz | `.npy` |
-| **Lighting** | Auxiliary Light Source | 820 lux (Stable) | - |
+| **Video** |  640 × 480 @ 30 fps | `.avi` |
+| **PPG Signal** |  50 Hz | `.npy` |
+| **Respiration** |  50 Hz | `.npy` |
+| **Lighting** |  820 lux (Stable) | - |
 
 > **Note:** All modalities are precisely temporally synchronized.
 
