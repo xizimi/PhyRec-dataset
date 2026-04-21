@@ -33,7 +33,7 @@ The dataset is organized by Subject ID and Session ID. Each session folder conta
 │   │   ├── front_Video-0.avi       # Facial video (Front view)
 │   │   ├── right_Video-0.avi       # Facial video (Right view)
 │   │   ├── up_Video-0.avi          # Facial video (Top view)
-│   │   ├── hands_Color.avi         # Hand video (if applicable)
+│   │   ├── hands_Color.avi         # Hand video (Hand view)
 │   │   ├── Serial-COM4_sig.npy     # Contact PPG signal
 │   │   ├── Respi-COM5_sig.npy      # Respiratory belt signal
 │   │   ├── Serial-COM4_ts.npy      # Timestamps for PPG
