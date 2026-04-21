@@ -11,7 +11,7 @@ The dataset consists of recordings from **17 subjects** (10 male and 7 female, a
 ### Acquisition Specifications
 
 | Modality | Resolution / Rate | Format |
-| :--- | :--- | :--- | :--- |
+| :--- |  :--- | :--- |
 | **Video** |  640 × 480 @ 30 fps | `.avi` |
 | **PPG Signal** |  50 Hz | `.npy` |
 | **Respiration** |  50 Hz | `.npy` |
